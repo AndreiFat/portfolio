@@ -1,10 +1,10 @@
 <template>
-  <h1>ceva</h1>
+  Something from portfolio
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "PortfolioView"
 };
 </script>
 

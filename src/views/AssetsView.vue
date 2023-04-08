@@ -1,10 +1,10 @@
 <template>
-  <h1>ceva</h1>
+  Something from Assets
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "AssetsView"
 };
 </script>
 
