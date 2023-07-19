@@ -1,10 +1,11 @@
 <template>
-  <Navbar />
-  <router-view />
+  <Navbar/>
+  <router-view/>
 </template>
 
 
 <style src="./assets/css/app.css"></style>
+
 
 <script setup>
 import Navbar from "@/components/Navbar.vue";
