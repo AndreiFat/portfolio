@@ -4,6 +4,14 @@ module.exports = {
         "./index.html",
         "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
+    theme: {
+        container: {
+            center: true,
+        },
+        backgroundImage: {
+            'macbook-image': "url('/src/assets/images/homepage_macbook.jpg')",
+        }
+    },
     daisyui: {
         themes: [
             {

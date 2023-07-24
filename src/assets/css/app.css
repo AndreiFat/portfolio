@@ -7,6 +7,14 @@
     color: #ffffff;
 }
 
+.bg-image {
+    background-image: url('/src/assets/images/homepage_macbook.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 850px !important;
+    background-size: cover;
+}
+
 /*nav {*/
 /*    padding: 30px;*/
 /*}*/

@@ -1,5 +1,5 @@
 <template>
-  
+  Nimic aici din homepage
 </template>
 
 <script>
