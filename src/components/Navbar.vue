@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full">
+  <div class="fixed w-full z-50">
     <div class="navbar container">
       <div class="navbar-start">
         <div class="dropdown">

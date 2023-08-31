@@ -10,6 +10,7 @@ module.exports = {
         },
         backgroundImage: {
             'macbook-image': "url('/src/assets/images/homepage_macbook.jpg')",
+            'profile-image': "url('/src/assets/images/profile_image.jpeg')",
         }
     },
     daisyui: {
@@ -25,7 +26,7 @@ module.exports = {
 
                     "neutral": "#2a323c",
 
-                    "base-100": "#1d232a",
+                    "base-100": "#020405",
 
                     "info": "#3abff8",
 

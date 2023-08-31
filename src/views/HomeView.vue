@@ -1,62 +1,46 @@
 <template>
-
-  <!-- Site Section with Background -->
-  <section class="relative bg-gray-400 p-8 presentation-section -z-50 h-full bg-cover bg-no-repeat">
-    <div class="container grid justify-items-center items-center">
-      <div class="grid grid-cols-1 w-3/4 m-0">
-        <div class="py-32 md:py-50 md:pt-60">
-          <p class="text-xl sm:text-3xl md:text-6xl font-bold">Lorem ipsum dolor sit amet.</p>
-          <p class="text-xs sm:text-xl md:text-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequatur
-            cupiditate
-            dolorum esse ipsa maiores minima minus porro ratione, rerum unde.</p>
-          <button class="btn btn-primary mt-3">See My Works</button>
+  <Presentation/>
+  <div class="py-12 bg-primary">
+    <div class="container grid grid-cols-4 gap-4">
+      <div class="facebook">
+        <div class="badge badge-neutral">
+          <font-awesome-icon :icon="['fab', 'facebook-f']"/>
+          Facebook
         </div>
       </div>
+      <div class="instagram">
+        <div class="badge badge-neutral">Instagram</div>
+      </div>
+      <div class="linkedin">
+        <div class="badge badge-neutral">LinkedIn</div>
+      </div>
+      <div class="fiverr">
+        <div class="badge badge-neutral">Fiverr</div>
+      </div>
     </div>
-  </section>
-  <Homepage/>
+  </div>
+  <About/>
 </template>
 
 <script>
 // @ is an alias to /src
 
-import Homepage from "@/components/Homepage.vue";
+import About from "@/components/Homepage/About_Section.vue";
+import Presentation from "@/components/Homepage/Presentation_Section.vue"
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
+library.add()
 export default {
   name: "HomeView",
   components: {
-    Homepage,
+    FontAwesomeIcon,
+    About,
+    Presentation,
   }
 };
 </script>
 
 <style scoped>
-/* Set the height of the navbar as per your design */
 
-
-/* Position the background image behind the transparent navbar */
-.presentation-section:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/src/assets/images/homepage_macbook.jpg") !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -50;
-}
-
-.presentation-section:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.52); /* Adjust the alpha value (0.5) to control the darkness */
-  z-index: -1;
-}
 </style>
